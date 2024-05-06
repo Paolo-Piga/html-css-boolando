@@ -18,6 +18,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
     
 }
 
@@ -76,5 +77,38 @@ header{
     gap: 10px;
     
 }
-/** **/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#ContainerCard{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/**regole immagini **/
+
+.product{
+    display: flex;
+    background-color: black;
+    min-height: 700px;
+    width: 32%;
+    
+    
+    
+}
+
+img{
+    
+}
+
 /** **/

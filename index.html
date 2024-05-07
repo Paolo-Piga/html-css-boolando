@@ -1,131 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boolando</title>
-    <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <!--Banner-->
-    <header>
-        <div id="containerbanner">
-            
-            <div id="Tipi">
-                <a href="#">Donna</a>
-                <a href="#">Uomo</a>
-                <a href="#">Bambini</a>
-            </div>
-    
-            <div id="logo">
-                <img id="idlogo" src="img/boolean-logo.png" alt="boolean">
-            </div>
-    
-            <div id="TreIcone">
-                
-                <a href="#" class="fa-regular fa-user"></a>
-                <a href="#" class="fa-regular fa-heart"></a>
-                <a href="#" class="fa-solid fa-bag-shopping"></a>
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+        <title>Boolando</title>
+    </head>
+    <body>
+        <header>
+            <div class="hNav">
 
+                <!-- text -->
+
+                <div class="hTextContainer">
+                    <a href="#" class="white noDeco"> Donna </a>
+                    <a href="#" class="white noDeco"> Uomo </a>
+                    <a href="#" class="white noDeco"> Bambini </a>
+                </div>
+
+                <!-- logo -->
+
+                <a href="https://boolean.careers/?utm_source=google&utm_campaign=it_search_brand&utm_medium=cpc&utm_content=boolean&utm_term=boolean&gad_source=1&gclid=Cj0KCQjw_-GxBhC1ARIsADGgDjso8-1dU1kKwRZhZg5WX6_4aBIybTLFxIBXXG5POW_BGaD-RWMHZ7QaAgpAEALw_wcB" class="logoAnchor">
+                    <img src="img/boolean-logo.png" alt="boolean logo" class="logo">
+                </a>
+
+                <!-- utils/settings -->
+
+                <div class="utilsContainer">
+                    <a href="#" class="fa-regular fa-user hUtils noDeco"></a>
+                    <a href="#" class="fa-regular fa-heart hUtils noDeco"></a>
+                    <a href="#" class="fa-solid fa-lock hUtils noDeco"></a>
+                </div>
             </div>
+        </header>
+        <main class="catalogue">
 
-        </div>
-       
-        
-    </header>
-
-    <!--Immagini-->
-    <main>
-        <div id="ContainerCard">
+            <!-- Relaxed fit tee -->
 
             <div class="product">
-                
-                <div class="containerimage">
-                    <!--Immagine fissa-->
-                    <img class="img1" src="img/1.webp" alt="Relaxed Tee Unisex 1">
-                    <!--Hover-->
-                    <img src="img/1b.webp" alt="Relaxed Tee Unisex 2">
-                    <!--Cuore-->
+
+                <!-- bg image switching with hover -->
+
+                <div class="productImg">    
+                    <!-- img fixed -->
+
+                    <img class="image1" src="img/1.webp" alt="relaxed tee 1">
+
+                    <!-- img hover -->
+
+                    <img class="image2" src="img/1b.webp" alt="relaxed tee 2">
+
+                    <!-- heart top right -->
+
                     <div class="heart">
-                        <a href="#" class="heart">&#9829;</a>
-                    </div>
-                    <!--Label-->
-
-                    <div class="discount">
-                        <label class="discount">-50%</label>
+                        <a class="heart" href="#">&#9829;</a>
                     </div>
 
-                    <!--green-->
+                    <!-- label flex -->
 
-                    <div class="green">
-                        <label class="green"> Sostenibilit&aacute; </label>
+                    <div class="labelFlex">
+                        <!-- discount -->
+
+                        <div class="discount">
+                            <label class="discount"> -50% </label>
+                        </div>
+
+                        <!-- eco -->
+
+                        <div class="green">
+                            <label class="green"> Sostenibilit&aacute; </label>
+                        </div>
                     </div>
-
                     
                 </div>
-                
-                <div class="containertext">
+
+                <!-- product text -->
+
+                <div class="productText">
                     <div class="brand">
-                        <span class="TestoBrand"> levi's </span>
+                        <span class="brandText"> levi's </span>
                     </div>
-                    <div class="Descrizione">
+                    <div class="productDesc">
                         <strong> RELAXED FIT TEE UNISEX </strong>
                     </div>
-                    <div class="Prezzo">
-                        <span class="Prezzorosso">14.99&euro;</span>
-                        <span class="ActualDiscount">29.99&euro;</span>
+                    <div class="productPrice">
+                        <span class="redPrice">14.99&euro;</span>
+                        <span class="discountOriginal">29.99&euro;</span>
                     </div>
-                
                 </div>
             </div>
 
+            <!-- Roses tee -->
+
             <div class="product">
-                <div class="containerimage">
+
+                <!-- bg image switching with hover -->
+
+                <div class="productImg">    
+                    <!-- img fixed -->
+
+                    <img class="image1" src="img/2.webp" alt="relaxed tee 1">
+
+                    <!-- img hover -->
+
+                    <img class="image2" src="img/2b.webp" alt="relaxed tee 2">
+
+                    <!-- heart top right -->
+
+                    <div class="heart">
+                        <a class="heart" href="#">&#9829;</a>
+                    </div>
+
+                    <!-- label flex -->
+
+                    <div class="labelFlex">
+                        <!-- discount -->
+
+                        <div class="discount">
+                            <label class="discount"> -30% </label>
+                        </div>
+                    </div>
+                    
                 </div>
-                
-                <div class="containertext">
-                
-                </div>
-            </div>
-            <div class="product">
-                <div class="containerimage">
-                </div>
-                
-                <div class="containertext">
-                
+
+                <!-- product text -->
+
+                <div class="productText">
+                    <div class="brand">
+                        <span class="brandText"> Guess </span>
+                    </div>
+                    <div class="productDesc">
+                        <strong> ROSES TEE </strong>
+                    </div>
+                    <div class="productPrice">
+                        <span class="redPrice">20.99&euro;</span>
+                        <span class="discountOriginal">29.99&euro;</span>
+                    </div>
                 </div>
             </div>
 
+            <!-- voglia di colori pastello -->
+
             <div class="product">
-                <div class="containerimage">
+
+                <!-- bg image switching with hover -->
+
+                <div class="productImg">    
+                    <!-- img fixed -->
+
+                    <img class="image1" src="img/3.webp" alt="relaxed tee 1">
+
+                    <!-- img hover -->
+
+                    <img class="image2" src="img/3b.webp" alt="relaxed tee 2">
+
+                    <!-- heart top right -->
+
+                    <div class="heart">
+                        <a class="heart" href="#">&#9829;</a>
+                    </div>
+
+                    <!-- label flex -->
+
+                    <div class="labelFlex">
+                        <!-- discount -->
+
+                        <div class="discount">
+                            <label class="discount"> -30% </label>
+                        </div>
+                    </div>
+                    
                 </div>
-                
-                <div class="containertext">
-                
+
+                <!-- product text -->
+
+                <div class="productText">
+                    <div class="brand">
+                        <span class="brandText"> Come Zucchero Filato </span>
+                    </div>
+                    <div class="productDesc">
+                        <strong> VOGLIA DI COLORI PASTELLO </strong>
+                    </div>
+                    <div class="productPrice">
+                        <span class="redPrice">129.99&euro;</span>
+                        <span class="discountOriginal">184.99&euro;</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- tee unisex -->
+
             <div class="product">
-                <div class="containerimage">
-                    <img src="img/1.webp" alt="prima">
+
+                <!-- bg image switching with hover -->
+
+                <div class="productImg">    
+                    <!-- img fixed -->
+
+                    <img class="image1" src="img/4.webp" alt="relaxed tee 1">
+
+                    <!-- img hover -->
+
+                    <img class="image2" src="img/4b.webp" alt="relaxed tee 2">
+
+                    <!-- heart top right -->
+
+                    <div class="heart">
+                        <a class="heart" href="#">&#9829;</a>
+                    </div>
+
+                    <!-- label flex -->
+
+                    <div class="labelFlex">
+                        <!-- discount -->
+
+                        <div class="discount">
+                            <label class="discount"> -50% </label>
+                        </div>
+
+                        <!-- eco -->
+
+                        <div class="green">
+                            <label class="green"> Sostenibilit&aacute; </label>
+                        </div>
+                    </div>
+
                 </div>
-                
-                <div class="containertext">
-                
+
+                <!-- product text -->
+
+                <div class="productText">
+                    <div class="brand">
+                        <span class="brandText"> Levi's </span>
+                    </div>
+                    <div class="productDesc">
+                        <strong> TEE UNISEX </strong>
+                    </div>
+                    <div class="productPrice">
+                        <span class="redPrice">14.99&euro;</span>
+                        <span class="discountOriginal">29.99&euro;</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- stripe bodice -->
+
             <div class="product">
-                <div class="containerimage">
+
+                <!-- bg image switching with hover -->
+
+                <div class="productImg">    
+                    <!-- img fixed -->
+
+                    <img class="image1" src="img/5.webp" alt="relaxed tee 1">
+
+                    <!-- img hover -->
+
+                    <img class="image2" src="img/5b.webp" alt="relaxed tee 2">
+
+                    <!-- heart top right -->
+
+                    <div class="heart">
+                        <a class="heart" href="#">&#9829;</a>
+                    </div> 
                 </div>
-                
-                <div class="containertext">
-                
+
+                <!-- product text -->
+
+                <div class="productText">
+                    <div class="brand">
+                        <span class="brandText"> Maya Deluxe </span>
+                    </div>
+                    <div class="productDesc">
+                        <strong> STRIPE BODICE </strong>
+                    </div>
+                    <div class="productPrice">
+                        <span class="redPrice">99.99&euro;</span>
+                        <span class="discountOriginal no">29.99&euro;</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-    
-</body>
+
+            <!-- maglione black -->
+
+            <div class="product">
+
+                <!-- bg image switching with hover -->
+
+                <div class="productImg">    
+                    <!-- img fixed -->
+
+                    <img class="image1" src="img/6.webp" alt="relaxed tee 1">
+
+                    <!-- img hover -->
+
+                    <img class="image2" src="img/6b.webp" alt="relaxed tee 2">
+
+                    <!-- heart top right -->
+
+                    <div class="heart">
+                        <a class="heart" href="#">&#9829;</a>
+                    </div>
+
+                    <!-- label flex -->
+
+                    <div class="labelFlex">
+                        <!-- eco -->
+
+                        <div class="green">
+                            <label class="green"> Sostenibilit&aacute; </label>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- product text -->
+
+                <div class="productText">
+                    <div class="brand">
+                        <span class="brandText"> Esprit </span>
+                    </div>
+                    <div class="productDesc">
+                        <strong> MAGLIONE - BLACK </strong>
+                    </div>
+                    <div class="productPrice">
+                        <span class="redPrice">29.99&euro;</span>
+                        <span class="discountOriginal no">29.99&euro;</span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="fNav">
+
+                <!-- legal info -->
+
+                <div class="references">
+                    <h3 class="white"> Boolando S.r.l.</h3>
+                    <div class="legal">
+                        <a href="#" class="noDeco white fAnchor"> Informazioni Legali </a>
+                        <a href="#" class="noDeco white fAnchor"> Informativa sulla privacy </a>
+                        <a href="#" class="noDeco white fAnchor"> Diritto di Recesso </a>
+                    </div>
+                </div>
+
+                <!-- social and contacts -->
+
+                <div class="contacts">
+                    <strong class="contactsText">Trovaci anche su</strong>
+                    <div class="fIconContainer">
+                        <a href="#" class="fa-brands fa-square-twitter noDeco"></a>
+                        <a href="#" class="fa-brands fa-square-facebook noDeco"></a>
+                        <a href="#" class="fa-brands fa-square-instagram noDeco"></a>
+                        <a href="#" class="fa-brands fa-square-pinterest noDeco"></a>
+                        <a href="#" class="fa-brands fa-square-youtube noDeco"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
